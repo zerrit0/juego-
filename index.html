@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buscaminas Matemático</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="fondo" aria-hidden="true"></canvas>
+<div class="anillo" aria-hidden="true"></div>
+<div class="wrap">
+<h1>💣 Buscaminas Matemático</h1>
+<p class="sub">Resolvé la cuenta para destapar cada casilla. Si fallás, perdés una vida.</p>
+<div class="levels" id="levels"></div>
+<div class="bar"><span id="lives"></span><span id="mines"></span><button id="flagBtn">🚩 Bandera</button></div>
+<div class="bar"><span id="score"></span><span id="best"></span></div>
+<div id="grid"></div>
+<div id="msg"></div>
+<div class="bar" style="justify-content:center;margin-top:10px"><button id="reset">Nueva partida</button><button id="ruletaBtn">🎡 Ruleta</button></div>
+</div>
+<div id="modal"><div class="box"><div>¿Cuánto es?</div><div class="q" id="q"></div><div class="opts" id="opts"></div></div></div>
+<div id="fin"><div class="box"><div id="finTitulo"></div><div id="finPuntos"></div><img id="finImg" alt=""><button id="finRuleta">🎡 Girar ruleta</button><button id="finBtn">Jugar de nuevo</button></div></div>
+<div id="ruleta"><div class="box"><div>🎡 Ruleta de premios</div><div class="rwrap"><div id="flecha"></div><canvas id="rueda" width="300" height="300"></canvas></div><div id="rRes"></div><button id="rGirar">¡Girar!</button><button id="rCerrar" style="display:none">Jugar de nuevo</button></div></div>
+<div id="bienvenida" class="show"><div class="box"><div id="bienTitulo">💣 Buscaminas Matemático</div><img id="bienImg" alt=""><div id="bienTxt">Resolvé la cuenta para destapar cada casilla.<br>Tenés 3 vidas. ¡Juntá puntos y girá la ruleta!</div><button id="bienBtn">▶ Empezar</button></div></div>
+<div id="susto"><img id="sustoImg" alt=""><div id="sustoEmoji">👹</div></div>
+<button id="musicBtn" aria-label="Activar o silenciar la música">🔊</button>
+<script src="script.js"></script>
+</body></html>
